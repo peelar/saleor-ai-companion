@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.0.24
     version: 0.0.24(zod@3.23.8)
   '@saleor/app-sdk':
-    specifier: 0.50.0
-    version: 0.50.0(graphql@16.8.1)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 0.50.1
+    version: 0.50.1(graphql@16.8.1)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0)
   '@saleor/macaw-ui':
     specifier: 1.0.0
     version: 1.0.0(@types/react-dom@18.2.10)(@types/react@18.2.25)(@vanilla-extract/css@1.14.2)(react-dom@18.2.0)(react@18.2.0)
@@ -3147,8 +3147,8 @@ packages:
     resolution: {integrity: sha512-6i/8UoL0P5y4leBIGzvkZdS85RDMG9y1ihZzmTZQ5LdHUYmZ7pKFoj8X0236s3lusPs1Fa5HTQUpwI+UfTcmeA==}
     dev: true
 
-  /@saleor/app-sdk@0.50.0(graphql@16.8.1)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-lg/mRV3lSnCQMiXF2EWWI8FYOBIwQCVZXlMa4fn3mrgkf0pO5tADi+RbgtMKFJtOUxmE4cRIKuZ1JXOTsTmHQg==}
+  /@saleor/app-sdk@0.50.1(graphql@16.8.1)(next@14.1.2)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-0+0lu5FBHLhB6NskcaL+7jX6eDXk3EKmARGhF9/OalOiCrKYWSPY6UssT56y3FFE2xXg1PQNm4Hc3XmWgOW+gw==}
     peerDependencies:
       '@vercel/kv': ^1.0.0
       graphql: '>=16.6.0'
