@@ -1,34 +1,8 @@
 "use client";
 import { Message as _Message } from "ai/react";
-import Image from "next/image";
-import { ProductFragment } from "../../generated/graphql";
 import clsx from "clsx";
 import React from "react";
-
-type Product = Pick<ProductFragment, "id" | "name" | "thumbnail">;
-
-const ProductCard = (product: Product) => {
-  return (
-    <div className="border p-2 bg-white">
-      <p className="text-lg">{product.name}</p>
-      {product.thumbnail && (
-        <Image src={product.thumbnail.url} width={256} height={256} alt={product.name} />
-      )}
-    </div>
-  );
-};
-
-const ProductsGrid = ({ products }: { products: Product[] }) => {
-  return (
-    <ul className="grid grid-cols-3 gap-4">
-      {products.map((product) => (
-        <li key={product.id}>
-          <ProductCard key={product.id} {...product} />
-        </li>
-      ))}
-    </ul>
-  );
-};
+import { ProductsGrid } from "./ProductsGrid";
 
 const Tool = (message: _Message) => {
   return message.toolInvocations?.map((i) => {
